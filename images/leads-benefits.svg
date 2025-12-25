@@ -1,0 +1,9 @@
+<svg viewBox="0 0 364 245" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="364.000000" height="245.000000" fill="none" clip-path="url(#clipPath_0)" customFrame="url(#clipPath_0)">
+	<defs>
+		<clipPath id="clipPath_0">
+			<rect width="364.000000" height="245.000000" x="0.000000" y="0.000000" rx="30.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+	</defs>
+	<rect id="Background" width="364.000000" height="245.000000" x="0.000000" y="0.000000" rx="30.000000" />
+	<ellipse id="Ellipse 9" rx="186.621231" ry="147.377365" cx="186.621231" cy="147.377365" fill="rgb(45.0367,45.0367,45.0367)" transform="matrix(0.943197,-0.332234,0.332234,0.943197,3.95264,103.997)" />
+</svg>

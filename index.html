@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лид Конвейер</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__container container">
+        <a href="/">
+            <img
+                    src="./images/logo.svg"
+                    alt="Логотип"
+                    width="250"
+                    height="70"
+            >
+        </a>
+
+        <nav class="header__nav" aria-label="Основная навигация">
+            <ul class="header__list list">
+                <li class="header__item">
+                    <a href="#">Как это работает</a>
+                </li>
+                <li class="header__item">
+                    <a href="#pricing">Цена</a>
+                </li>
+                <li class="header__item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="header__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__contacts" aria-label="Контакты">
+            <a href="https://wa.me/74951183282" target="_blank" aria-label="Написать в WhatsApp">
+            <img
+                    src="./images/whatsapp.svg"
+                    alt="WhatsApp"
+                    width="40"
+                    height="40"
+            >
+            </a>
+
+            <a href="https://t.me/+74951183282" target="_blank" aria-label="Написать в Telegram">
+            <img
+                    src="./images/telegram.svg"
+                    alt="Telegram"
+                    width="40"
+                    height="40"
+            >
+            </a>
+
+            <a href="tel:+74951183282" class="header__phone subtitle">+7 495 118-32-82</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+<h1 class="main-title"><span class="title_orange">Лидогенерация</span> для бизнеса</h1>
+                <p class="hero__subtitle subtitle">Покупайте только целевые лиды по фиксированной цене от 300 ₽</p>
+                <button
+                        type="button"
+                        class="hero__button button"
+                >
+                    Выбрать пакет лидов
+                </button>
+            </div>
+
+            <img
+                    src="./images/hero.webp"
+                    alt="Интерфейс сервиса лидогенерации"
+                    width="850"
+                    height="497"
+            >
+        </div>
+
+        <ul class="services">
+    <li class="services__item">Лидогенерация в b2b</li>
+            <li class="services__item">Биржа лидов</li>
+            <li class="services__item">Сервис по Лидгену</li>
+            <li class="services__item">Лиды для производства</li>
+            <li class="services__item">Клиенты для бизнеса</li>
+            <li class="services__item">Определить телефон посетителя сайта</li>
+        </ul>
+    </section>
+
+    <section class="leads-benefits">
+    <div class="container">
+        <h2 class="title">
+            Завалим ваш отдел продаж
+            <span class="title_orange">целевыми Лидами</span>
+        </h2>
+
+        <ul class="leads-benefits__list list">
+            <li class="leads-benefits__item">
+                <h3 class="leads-benefits__subtitle subtitle">
+                    Оплата за результат
+                </h3>
+                <p class="leads-benefits__text text">
+                    Вы платите только за переданные
+                    и получение вами целевые Лиды
+                    — их контактные данные (телефон,
+                    Telegram, email)
+                </p>
+                <img
+                        src="./images/phone.webp"
+                        class="leads-benefits__img"
+                        alt="Телефон"
+                        width="365"
+                        height="350"
+                        loading="lazy"
+                        decoding="async"
+                >
+            </li>
+            <li class="leads-benefits__item">
+                <h3 class="leads-benefits__subtitle subtitle">
+                    Качественные лиды
+                </h3>
+                <p class="leads-benefits__text text">
+                    Все передаваемые вам Лиды — это потенциальные клиенты, которые искали ваш товар или услугу
+                </p>
+                <img
+                        src="./images/man.webp"
+                        class="leads-benefits__img"
+                        alt="Мужчина"
+                        width="364"
+                        height="349"
+                        loading="lazy"
+                        decoding="async"
+                >
+            </li>
+            <li class="leads-benefits__item">
+                <h3 class="leads-benefits__subtitle subtitle">
+                    Любой объём —
+                    <br>
+на ваш выбор
+                </h3>
+                <p class="leads-benefits__text text">
+                    Покупайте сколько контактов потенциальных клиентов в месяц
+                    — сколько требуется вам!
+                </p>
+                <img
+                        src="./images/basket.webp"
+                        class="leads-benefits__img"
+                        alt="Корзина"
+                        width="367"
+                        height="349"
+                        loading="lazy"
+                        decoding="async"
+                >
+            </li>
+            <li class="leads-benefits__item">
+                <h3 class="leads-benefits__subtitle subtitle">
+                    Комплекс технологий
+                </h3>
+                <p class="leads-benefits__text text">
+                    После расчёта стоимости Лидов и оплаты выбранного пакета — вы получите уникальный код для своего сайта,
+                    который позволит отслеживать контакты тех, кто не оставил заявку
+                </p>
+                <img
+                        src="./images/computer.webp"
+                        class="leads-benefits__img"
+                        alt="Компьютер"
+                        width="364"
+                        height="349"
+                        loading="lazy"
+                        decoding="async"
+                >
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+<div class="container">
+    <h2 class="title">
+        Стоимость технологий
+        <span class="title_orange">«Лид Конвейер»</span>
+    </h2>
+    <h3 class="pricing__subtitle subtitle subtitle_gray">
+        Оптимальные тарифы и цены на получение готовых Лидов и заявок с вашего сайта, без переплаты и абонентской платы
+    </h3>
+
+    <ul class="pricing__list list">
+<li class="pricing__item">
+    <p class="pricing__type">
+        Старт
+    </p>
+
+    <h4 class="pricing__sectitle sectitle">
+        50 готовых лидов
+        <br>
+        за
+        <span class="sectitle_gradient">22 500 ₽</span>
+    </h4>
+
+    <p class="pricing__text text">
+        Стартовый пакет для тех, кто хочет купить Лидов со своего сайта и повысить свои продаж
+    </p>
+
+    <ul class="pricing__description">
+        <li class="pricing__description-item text">
+            50 Лидов
+        </li>
+        <li class="pricing__description-item text">
+            450 ₽ за один Лид
+        </li>
+        <li class="pricing__description-item text">
+            Получение за 5–7 дней
+        </li>
+    </ul>
+
+    <button
+            type="button"
+            class="pricing__button button"
+    >
+        Купить
+    </button>
+</li>
+
+        <li class="pricing__item pricing__item_premium">
+            <p class="pricing__type pricing__type_premium">
+                Премиум
+            </p>
+
+            <h4 class="pricing__sectitle pricing__sectitle_premium sectitle ">
+                100 готовых лидов
+                <br>
+                за
+                <span class="sectitle_gradient">40 000 ₽</span>
+            </h4>
+
+            <p class="pricing__text text">
+                Оптимальный пакет Лидов для любого отдела продаж и для повышения продаж своих товаров или услуг
+            </p>
+
+            <ul class="pricing__description">
+                <li class="pricing__description-item pricing__description-item_premium text">
+                    100 Лидов
+                </li>
+                <li class="pricing__description-item pricing__description-item_premium text">
+                    400 ₽ за один Лид
+                </li>
+                <li class="pricing__description-item pricing__description-item_premium text">
+                    Получение за 7–14 дней
+                </li>
+                <li class="pricing__description-item pricing__description-item_premium text">
+                    Возможность показа Лидам рекламы через Яндекс.Директ
+                </li>
+            </ul>
+
+            <button
+                    type="button"
+                    class="pricing__button button"
+            >
+                Купить
+            </button>
+        </li>
+
+        <li class="pricing__item">
+            <p class="pricing__type">
+                Премиум
+            </p>
+
+            <h4 class="pricing__sectitle sectitle">
+                300 готовых лидов
+                <br>
+                за
+                <span class="sectitle_gradient">90 000 ₽</span>
+            </h4>
+
+            <p class="pricing__text text">
+                Максимум целевых Лидов в ближайшее время для вашего бизнеса которые уже завтра могут стать Вашими клиентами!
+            </p>
+
+            <ul class="pricing__description">
+                <li class="pricing__description-item text">
+                    300 Лидов
+                </li>
+                <li class="pricing__description-item text">
+                    300 ₽ за один Лид
+                </li>
+                <li class="pricing__description-item text">
+                    Получение за 14–30 дней
+                </li>
+                <li class="pricing__description-item text">
+                    Возможность показа Лидам рекламы через Яндекс.Директ
+                </li>
+                <li class="pricing__description-item text">
+                    Готовый и конверсионный скрипт продаж целевым Лидам
+                </li>
+            </ul>
+
+            <button
+                    type="button"
+                    class="pricing__button button"
+            >
+                Купить
+            </button>
+        </li>
+    </ul>
+</div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container">
+    <p class="footer__subtitle subtitle">© 2025 Все права защищены. Технология «Лид Конвейер» - лидогенерация для бизнеса.</p>
+    <p class="footer__text text">ООО «ДС-ГРУПП» ИНН 7801355174 ОГРН 1187847129425</p>
+
+   <ul class="footer__list list">
+       <li class="footer__item"><a href="#">Блог |</a></li>
+       <li class="footer__item"><a href="#">Договор-оферта |</a></li>
+       <li class="footer__item"><a href="#">Политика конфиденциальности |</a></li>
+       <li class="footer__item"><a href="#">Соглашение об обработке данных |</a></li>
+       <li class="footer__item"><a href="#">Вход в личный кабинет</a></li>
+   </ul>
+    </div>
+</footer>
+
+</body>
+</html>

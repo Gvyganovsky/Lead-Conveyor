@@ -1,0 +1,606 @@
+/*!
+    ----------------------------------
+    1. Reset CSS
+    2. Fonts
+    3. Default styles
+    4. Header
+    5. Leads-benefits
+    6. Pricing
+    ----------------------------------
+ */
+
+/*
+    ----------------------------------
+    1. Reset CSS
+    ----------------------------------
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+input[type='file'] {
+    max-width: 100%;
+}
+
+/*
+    ----------------------------------
+    2. Fonts
+    ----------------------------------
+*/
+
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Bold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*
+    ----------------------------------
+    3. Default styles
+    ----------------------------------
+*/
+
+:root {
+    --color-gray: #808080;
+    --color-white: #ffffff;
+    --color-dark-gray: #2D2D2D;
+    --color-gray-lite: #C0C0C0;
+    --color-gray-light: #F6F6F6;
+    --color-orange-juice: #FF6600;
+
+    --font-family-inter: "Inter", sans-serif;
+    --font-family-montserrat: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-inter), sans-serif;
+}
+
+section {
+    margin-top: 120px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1800px;
+}
+
+.main-title {
+    font-size: 80px;
+    line-height: 80px;
+    font-family: var(--font-family-montserrat), sans-serif;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    color: var(--color-dark-gray);
+    font-family: var(--font-family-montserrat), sans-serif;
+}
+
+.title_orange {
+    display: block;
+    color: var(--color-orange-juice);
+}
+
+.subtitle {
+    font-size: 32px;
+    color: var(--color-dark-gray);
+}
+
+.subtitle_gray {
+    text-align: center;
+color: var(--color-gray);
+}
+
+.sectitle {
+font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+    font-family: var(--font-family-montserrat), sans-serif;
+}
+
+.sectitle_gradient {
+    background: linear-gradient(to right, #FF6600, #F26659 27%, #F06177 37%, #E65D97 48%, #CA46D2 71%, #8D13F9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.text {
+    font-size: 24px;
+    color: var(--color-gray);
+}
+
+.button {
+    width: 100%;
+    height: 72px;
+    cursor: pointer;
+    font-size: 24px;
+    max-width: 500px;
+    border-radius: 20px;
+    color: var(--color-white);
+    border: 1px solid var(--color-orange-juice);
+    background-color: var(--color-orange-juice);
+}
+
+.button:hover {
+    color: var(--color-orange-juice);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-orange-juice);
+}
+
+.list {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+.subtitle {
+    font-size: 20px;
+}
+
+}
+
+/*
+    ----------------------------------
+    4. Header
+    ----------------------------------
+*/
+
+.header {
+    padding: 6px 0;
+    margin: 0 auto;
+    max-width: 1920px;
+    border-radius: 0 0 40px 40px;
+    background-color: var(--color-dark-gray);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    gap: 60px;
+}
+
+.header__item a {
+    color: var(--color-white);
+}
+
+.header__item a:hover {
+    color: var(--color-gray-lite);
+}
+
+.header__contacts {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.header__phone {
+color: var(--color-white);
+}
+
+
+@media (max-width: 1200px) {
+.header__container {
+    gap: 24px;
+    flex-direction: column;
+}
+
+}
+
+/*
+    ----------------------------------
+    4. Hero
+    ----------------------------------
+*/
+
+.hero {
+    margin: 0 auto;
+    max-width: 1920px;
+    padding-top: 60px;
+    background-color: var(--color-gray-light);
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__subtitle {
+    display: flex;
+    max-width: 620px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.hero__subtitle::after {
+    content: "";
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("./images/Money-Mouth-Face.svg");
+}
+
+.hero__button {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+.services {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1780px;
+    margin: 60px auto 0;
+}
+
+.services__item {
+    width: 280px;
+    height: 88px;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    color: var(--color-gray);
+    border-radius: 20px 20px 0 0;
+    background-color: var(--color-white);
+}
+
+@media (max-width: 1600px) {
+    .hero__container {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .main-title {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .services {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 34px;
+        line-height: 48px;
+    }
+}
+
+/*
+    ----------------------------------
+    5. Leads-benefits
+    ----------------------------------
+*/
+
+.leads-benefits__list {
+    margin-top: 40px;
+}
+
+.leads-benefits__item {
+    width: 100%;
+    min-height: 350px;
+    max-width: 880px;
+    position: relative;
+    padding: 40px 60px 0;
+    border-radius: 30px;
+    background-color: var(--color-gray-light);
+}
+
+.leads-benefits__subtitle {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.leads-benefits__subtitle::after {
+    content: "";
+    width: 44px;
+    height: 44px;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url("./images/star.svg");
+}
+
+.leads-benefits__text {
+    margin-top: 20px;
+    max-width: 465px;
+}
+
+.leads-benefits__img {
+    right: 0;
+    bottom: 0;
+position: absolute;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-image: url(./images/leads-benefits.svg);
+}
+
+@media (max-width: 900px) {
+    .leads-benefits__item {
+text-align: center;
+        padding: 20px 20px 0;
+    }
+
+    .leads-benefits__subtitle {
+        justify-content: center;
+    }
+
+    .leads-benefits__text {
+        margin: 0 auto;
+    }
+
+    .leads-benefits__img {
+        background: none;
+        position: relative;
+    }
+}
+
+/*
+    ----------------------------------
+    6. Pricing
+    ----------------------------------
+*/
+
+.pricing__subtitle {
+    max-width: 1085px;
+    margin: 20px auto 0;
+}
+
+.pricing__list {
+    margin-top: 60px;
+}
+
+.pricing__item {
+    width: 100%;
+    min-height: 810px;
+    padding: 40px;
+    display: flex;
+    max-width: 580px;
+    border-radius: 30px;
+    flex-direction: column;
+    background-color: var(--color-gray-light);
+}
+
+.pricing__item_premium {
+    background-color: var(--color-dark-gray);
+}
+
+.pricing__type {
+    width: fit-content;
+    position: relative;
+    font-size: 32px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--color-dark-gray);
+}
+
+.pricing__type_premium {
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+
+.pricing__type::after {
+    content: "";
+    top: 50%;
+    right: -60px;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    transform: translateY(-50%);
+    background: url("./images/black-star.svg") no-repeat center / contain;
+}
+
+.pricing__type_premium::after {
+    background: url("./images/white-star.svg") no-repeat center / contain;
+}
+
+.pricing__sectitle {
+    margin-top: 30px;
+    max-width: 440px;
+}
+
+.pricing__sectitle_premium {
+    color: var(--color-white);
+}
+
+.pricing__text {
+    margin-top: 20px;
+    max-width: 420px;
+}
+
+.pricing__description {
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.pricing__description-item {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--color-dark-gray);
+}
+
+.pricing__description-item::before {
+    flex-shrink: 0;
+    width: 28px;
+    height: 16px;
+content: "";
+background: url("./images/check-mark.svg") no-repeat center / contain;
+}
+
+.pricing__description-item_premium {
+    color: var(--color-white);
+}
+
+.pricing__description-item_premium::before {
+    background: url("./images/check-mark-white.svg") no-repeat center / contain;
+}
+
+.pricing__button {
+margin-top: auto;
+}
+
+/*
+    ----------------------------------
+    7. Footer
+    ----------------------------------
+*/
+
+.footer {
+    margin-top: 120px;
+}
+
+.footer__container {
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--color-dark-gray);
+}
+
+.footer__subtitle {
+    color: var(--color-white);
+}
+
+.footer__text {
+    margin-top: 20px;
+    color: var(--color-white);
+}
+
+.footer__list {
+    gap: 2px;
+    margin-top: 40px;
+}
+
+.footer__item a {
+    font-size: 20px;
+    color: var(--color-gray);
+}
